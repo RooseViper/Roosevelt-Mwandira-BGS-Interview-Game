@@ -15,7 +15,7 @@ C:/Users/rmwandire/Untitled Blue Gravity Studios Interview Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49802
+53262
 Successfully changed project path to: C:/Users/rmwandire/Untitled Blue Gravity Studios Interview Game
 C:/Users/rmwandire/Untitled Blue Gravity Studios Interview Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/rmwandire/Untitled Blue Gravity Studios Interview Game
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 82.41 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 87.69 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.2f1 (d6360bedb9a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Resources/UnitySubsystems
@@ -63,89 +63,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56160
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56092
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003419 seconds.
+Registered in 0.003438 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 84.26 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 87.40 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.570 seconds
+- Completed reload, in  0.718 seconds
 Domain Reload Profiling:
-	ReloadAssembly (571ms)
-		BeginReloadAssembly (62ms)
+	ReloadAssembly (719ms)
+		BeginReloadAssembly (64ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (416ms)
-			LoadAssemblies (59ms)
+		EndReloadAssembly (413ms)
+			LoadAssemblies (63ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (104ms)
+			SetupTypeCache (89ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (22ms)
-			SetupLoadedEditorAssemblies (247ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (253ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (84ms)
+				RefreshPlugins (87ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (112ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
+				ProcessInitializeOnLoadAttributes (109ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006079 seconds.
+Registered in 0.005000 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\rmwandire\Untitled Blue Gravity Studios Interview Game\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\rmwandire\Untitled Blue Gravity Studios Interview Game\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 81.54 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 79.73 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.031 seconds
+- Completed reload, in  1.050 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1032ms)
-		BeginReloadAssembly (95ms)
+	ReloadAssembly (1051ms)
+		BeginReloadAssembly (118ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (826ms)
-			LoadAssemblies (73ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (781ms)
+			LoadAssemblies (82ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (207ms)
+			SetupTypeCache (210ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (453ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (416ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (82ms)
-				BeforeProcessingInitializeOnLoad (97ms)
-				ProcessInitializeOnLoadAttributes (217ms)
-				ProcessInitializeOnLoadMethodAttributes (48ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				RefreshPlugins (80ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (202ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.72 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 43 unused Assets / (225.4 KB). Loaded Objects now: 4498.
-Memory consumption went from 150.7 MB to 150.4 MB.
-Total: 4.005700 ms (FindLiveObjects: 0.464600 ms CreateObjectMapping: 0.188400 ms MarkObjects: 3.180400 ms  DeleteObjects: 0.171000 ms)
+Unloading 4049 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (225.4 KB). Loaded Objects now: 4499.
+Memory consumption went from 150.7 MB to 150.5 MB.
+Total: 3.731000 ms (FindLiveObjects: 0.495200 ms CreateObjectMapping: 0.502500 ms MarkObjects: 2.572200 ms  DeleteObjects: 0.153300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -159,55 +159,61 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 853.298578 seconds.
-  path: Assets/Scripts/GameManager.cs
-  artifactKey: Guid(0e145db47dff84943a9035030068a1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GameManager.cs using Guid(0e145db47dff84943a9035030068a1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9106400a29df15fec5acdc607a840b98') in 0.044440 seconds 
+  Time since last request: 5141.186258 seconds.
+  path: Assets/Pinneaple Dev/Demo/Demo.unity
+  artifactKey: Guid(975326c5f497e4d4fba51540d7522a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Demo/Demo.unity using Guid(975326c5f497e4d4fba51540d7522a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f71260e223fbf4e3d8565311dcb51b6e') in 0.012056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pinneaple Dev/Demo
+  artifactKey: Guid(7ca7d26cf2591e3489c344e088111d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Demo using Guid(7ca7d26cf2591e3489c344e088111d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25b38fcf1cda5a717c67f9c97d751805') in 0.007535 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006788 seconds.
+Registered in 0.004399 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\rmwandire\Untitled Blue Gravity Studios Interview Game\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\rmwandire\Untitled Blue Gravity Studios Interview Game\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.04 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.311 seconds
+- Completed reload, in  1.104 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1312ms)
-		BeginReloadAssembly (172ms)
+	ReloadAssembly (1104ms)
+		BeginReloadAssembly (123ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (49ms)
-		EndReloadAssembly (978ms)
-			LoadAssemblies (138ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (892ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (330ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (406ms)
+			SetupTypeCache (292ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (399ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
+				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (95ms)
-				ProcessInitializeOnLoadAttributes (245ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (242ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
 				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 2.80 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4044 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 30 unused Assets / (192.5 KB). Loaded Objects now: 4502.
+Unloading 30 unused Assets / (192.2 KB). Loaded Objects now: 4502.
 Memory consumption went from 150.7 MB to 150.5 MB.
-Total: 4.191000 ms (FindLiveObjects: 0.336300 ms CreateObjectMapping: 0.173000 ms MarkObjects: 3.516800 ms  DeleteObjects: 0.163300 ms)
+Total: 5.018900 ms (FindLiveObjects: 0.404200 ms CreateObjectMapping: 0.458700 ms MarkObjects: 3.938600 ms  DeleteObjects: 0.215700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -221,63 +227,325 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 812.288892 seconds.
-  path: Assets/Scripts/GameManager.cs
-  artifactKey: Guid(0e145db47dff84943a9035030068a1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GameManager.cs using Guid(0e145db47dff84943a9035030068a1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c11fbe1d8e1f87d4e2533b5ade47e51d') in 0.019878 seconds 
+  Time since last request: 27.594165 seconds.
+  path: Assets/Pinneaple Dev/Documentation/READ ME.txt
+  artifactKey: Guid(b83955eeae9971d409cef27c06aa093b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Documentation/READ ME.txt using Guid(b83955eeae9971d409cef27c06aa093b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c048be2606736bf002b44c03f2e80ca1') in 0.034545 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011732 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\rmwandire\Untitled Blue Gravity Studios Interview Game\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\rmwandire\Untitled Blue Gravity Studios Interview Game\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.61 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.160 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2162ms)
-		BeginReloadAssembly (377ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (20ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (94ms)
-		EndReloadAssembly (1482ms)
-			LoadAssemblies (244ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (505ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (94ms)
-			SetupLoadedEditorAssemblies (657ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (22ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (182ms)
-				ProcessInitializeOnLoadAttributes (382ms)
-				ProcessInitializeOnLoadMethodAttributes (60ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.28 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4044 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 30 unused Assets / (192.6 KB). Loaded Objects now: 4505.
-Memory consumption went from 150.7 MB to 150.5 MB.
-Total: 8.330300 ms (FindLiveObjects: 0.456700 ms CreateObjectMapping: 0.927400 ms MarkObjects: 6.601600 ms  DeleteObjects: 0.342700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 73.300460 seconds.
+  path: Assets/Pinneaple Dev/Assets/Sprites/Materials/grass.mat
+  artifactKey: Guid(358039b50a44bb146b575dfde548796e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Sprites/Materials/grass.mat using Guid(358039b50a44bb146b575dfde548796e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f64086d3a427e8694982ad84101be4') in 0.369289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Pinneaple Dev/Assets/Sprites/Materials/tree_3.mat
+  artifactKey: Guid(6c755472849a3b4499ae6d4d4d3dc7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Sprites/Materials/tree_3.mat using Guid(6c755472849a3b4499ae6d4d4d3dc7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa6bffe81573d5dababd4533c99edf00') in 0.022609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.715935 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/Grass.prefab
+  artifactKey: Guid(a29fb418e23663642bfa7886214329db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/Grass.prefab using Guid(a29fb418e23663642bfa7886214329db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07519869373a1762521657faf0d60567') in 0.102126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.928963 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/Tilesets
+  artifactKey: Guid(111c5f2b8130ab1428f32fa5bbdb3ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/Tilesets using Guid(111c5f2b8130ab1428f32fa5bbdb3ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72bcf8d4ebe0659ea887f9d2bd25d1d') in 0.006832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.085695 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/Tilesets/ground_tiles_1.PNG
+  artifactKey: Guid(b126aa79ecb739e44a63603af72442c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/Tilesets/ground_tiles_1.PNG using Guid(b126aa79ecb739e44a63603af72442c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '433e5d7187b07f09ef2b447ce4a95170') in 2.899057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/Tilesets/ground_tiles_6.PNG
+  artifactKey: Guid(9f4640469b1e623408dd7a3b56e6f6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/Tilesets/ground_tiles_6.PNG using Guid(9f4640469b1e623408dd7a3b56e6f6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce26eb3bd570817209cd423b1e62f250') in 0.130488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/Tilesets/ground_tiles_4.PNG
+  artifactKey: Guid(7883a98485c262441866acf656ee5fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/Tilesets/ground_tiles_4.PNG using Guid(7883a98485c262441866acf656ee5fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1525fc1f7fff5ba4f77c2f6e8574707d') in 0.128485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.862181 seconds.
+  path: Assets/Pinneaple Dev/Assets/Animations/Hero Animatios/hero Controller.controller
+  artifactKey: Guid(0c3ce569591641c40b72c8873597275d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Animations/Hero Animatios/hero Controller.controller using Guid(0c3ce569591641c40b72c8873597275d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92de8edcc5d047793cb849f1d133b87d') in 0.014589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.570244 seconds.
+  path: Assets/Pinneaple Dev/Assets/CharacterSprites/hero_spritesheet.PNG
+  artifactKey: Guid(ccf0c68dd7f2ec04ebb29da1a386816a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/CharacterSprites/hero_spritesheet.PNG using Guid(ccf0c68dd7f2ec04ebb29da1a386816a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371798d245f0be4034c8d7281ca8d265') in 0.348963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.994035 seconds.
+  path: Assets/Pinneaple Dev/Assets
+  artifactKey: Guid(034cde2766409734c85459ba59ebc18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets using Guid(034cde2766409734c85459ba59ebc18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f226eea7a20bb90ee6057590618527d') in 0.008918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.870581 seconds.
+  path: Assets/Pinneaple Dev/Assets/Sprites
+  artifactKey: Guid(aa0146b4354071544be622a12a8be7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Sprites using Guid(aa0146b4354071544be622a12a8be7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3796650aa31fe582b3923a9f9a083aa') in 0.007806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.080446 seconds.
+  path: Assets/Pinneaple Dev/Assets/Sprites/grass.PNG
+  artifactKey: Guid(5fc5812f5c0e97f4ca46c2a25576a265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Sprites/grass.PNG using Guid(5fc5812f5c0e97f4ca46c2a25576a265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17f64be12760a69bf87a2892379c9970') in 0.029320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pinneaple Dev/Assets/Sprites/tree_2.PNG
+  artifactKey: Guid(41635933561dd5a498348ff2be3ea92f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Sprites/tree_2.PNG using Guid(41635933561dd5a498348ff2be3ea92f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b861a16367a0e5e2e13879fbc9fa4677') in 0.036783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pinneaple Dev/Assets/Sprites/item_heart.PNG
+  artifactKey: Guid(fca79817cf3d34c40b86811b2e5e2bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Sprites/item_heart.PNG using Guid(fca79817cf3d34c40b86811b2e5e2bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9752c6d01e4b5b3127fccadf6aa7598c') in 0.032510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pinneaple Dev/Assets/Sprites/tree_3.PNG
+  artifactKey: Guid(6c70487f6d9e9da4da6a4e1d9d234a35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Sprites/tree_3.PNG using Guid(6c70487f6d9e9da4da6a4e1d9d234a35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0392545da1f09656896b28ee8eea0ab') in 0.025577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pinneaple Dev/Assets/Sprites/tiles_stone_1.PNG
+  artifactKey: Guid(7af3a95a438d3094ab98d35533b1876f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Sprites/tiles_stone_1.PNG using Guid(7af3a95a438d3094ab98d35533b1876f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2a183ee11d23bebaf916b17d10d5e96') in 0.031642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Pinneaple Dev/Assets/Sprites/item_chest.PNG
+  artifactKey: Guid(6f4c9a6a12515cc458fabc7126642d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Sprites/item_chest.PNG using Guid(6f4c9a6a12515cc458fabc7126642d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e177b707d1874db3f405803aea9a9d02') in 0.041009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.866596 seconds.
+  path: Assets/Pinneaple Dev/Assets/CharacterSprites/enemy_blob_spritesheet.PNG
+  artifactKey: Guid(016d9f4e0e103004da67f486af32a8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/CharacterSprites/enemy_blob_spritesheet.PNG using Guid(016d9f4e0e103004da67f486af32a8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb2a863b0e8d5ca5f8499beaa277796b') in 0.062558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 100.661126 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_1_0.asset
+  artifactKey: Guid(d8f8ce8b88d78d14084fd24e75509477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_1_0.asset using Guid(d8f8ce8b88d78d14084fd24e75509477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5d6395c9af40c0cb547e463142a16b3') in 0.020598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.038208 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_1_1.asset
+  artifactKey: Guid(e9cf073b61b9d5444aa94096589a62ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_1_1.asset using Guid(e9cf073b61b9d5444aa94096589a62ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1b9c095157f8ebb05203503fb0226c') in 0.018833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_2_8.asset
+  artifactKey: Guid(9382c4a0f6799474eb56d607b4e735bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_2_8.asset using Guid(9382c4a0f6799474eb56d607b4e735bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c440c40c8a5de7af1f4abcfc22c64a') in 0.019407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_6_3.asset
+  artifactKey: Guid(66357030946e2e34ba4cdb023194edac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_6_3.asset using Guid(66357030946e2e34ba4cdb023194edac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d4811df37652bc947b211e7e9e2cb53') in 0.021000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_3_8.asset
+  artifactKey: Guid(db26c159ed929d54482d4c248224d2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_3_8.asset using Guid(db26c159ed929d54482d4c248224d2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63904d96e0b0f1b3eaf48111a370a810') in 0.020450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_6_1.asset
+  artifactKey: Guid(7fa5f6610f5bdba43b0b05f8c8608e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_6_1.asset using Guid(7fa5f6610f5bdba43b0b05f8c8608e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30089b09c7972d995b2897519c5da0c2') in 0.021892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_4_4.asset
+  artifactKey: Guid(5bef636e6b4241d4f98690d365326609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_4_4.asset using Guid(5bef636e6b4241d4f98690d365326609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7750cc475b6b4437758b5c29ddffd46') in 0.019404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_3_4.asset
+  artifactKey: Guid(4adde175ac8f66f4b89c65281fc77e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_3_4.asset using Guid(4adde175ac8f66f4b89c65281fc77e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd25491c4cb333d0955d5e28470505716') in 0.014943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_1_8.asset
+  artifactKey: Guid(790ae17e675c40a429711c5ec656bb91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_1_8.asset using Guid(790ae17e675c40a429711c5ec656bb91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2611b20d06ff6f95f05900ba5486f7c') in 0.019966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_3_7.asset
+  artifactKey: Guid(4b074526eacfacd49a439f64f85eb175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_3_7.asset using Guid(4b074526eacfacd49a439f64f85eb175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c1f3f2a20614262a163cf234aa07203') in 0.016564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_2_2.asset
+  artifactKey: Guid(c3644a1b05718464285c362e1805e214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_2_2.asset using Guid(c3644a1b05718464285c362e1805e214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a5fcfce75260c1ee4b881eccfe8284') in 0.019283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_2_6.asset
+  artifactKey: Guid(ab60112b36eb80b4789c66361c137028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_2_6.asset using Guid(ab60112b36eb80b4789c66361c137028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6948a047decf28c7adbcde56f64f872') in 0.019082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_2_3.asset
+  artifactKey: Guid(79b249af79d79cc478cbb9ff06e8a2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_2_3.asset using Guid(79b249af79d79cc478cbb9ff06e8a2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010cc423d06410159dc82281740799ef') in 0.018808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_5_7.asset
+  artifactKey: Guid(851bb0196e0ac9147a4bf3cf60b24ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_5_7.asset using Guid(851bb0196e0ac9147a4bf3cf60b24ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd093e910f114c8155786b566efe752f8') in 0.018151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_4_6.asset
+  artifactKey: Guid(c8a4ab3e728d74a48871d9b2d5fe1e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_4_6.asset using Guid(c8a4ab3e728d74a48871d9b2d5fe1e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3bc2231a9e29d082aff840ed59f4b4f') in 0.018465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_5_3.asset
+  artifactKey: Guid(5d5be6c0f39eac544b327bd38da6a547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_5_3.asset using Guid(5d5be6c0f39eac544b327bd38da6a547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda8f945b76d5420502fed548fe30b0b') in 0.018332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_3_5.asset
+  artifactKey: Guid(55d1a8c35b64a9243a738b0805df6a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_3_5.asset using Guid(55d1a8c35b64a9243a738b0805df6a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd96943b0fe77dd3267a48823b38cb58c') in 0.016111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_1_4.asset
+  artifactKey: Guid(23b82fea5eefaba4dae1241404de9f62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_1_4.asset using Guid(23b82fea5eefaba4dae1241404de9f62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ab868ba85d8fa695abc55325fa6b283') in 0.019045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_5_6.asset
+  artifactKey: Guid(5781848b5110d124abc9593380d7e4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_5_6.asset using Guid(5781848b5110d124abc9593380d7e4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b991ef7aa2937f50ea2a52a30ea18dea') in 0.018677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_1_6.asset
+  artifactKey: Guid(35d9c4f01b9e37542afb794f83843e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_1_6.asset using Guid(35d9c4f01b9e37542afb794f83843e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86274d137493b81574bdc87570262d16') in 0.016755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_1_7.asset
+  artifactKey: Guid(70e489b187a0513489e78704b03a2ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_1_7.asset using Guid(70e489b187a0513489e78704b03a2ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295c9d905000921b502c54f212f6fbf0') in 0.017632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_4_2.asset
+  artifactKey: Guid(e3f91f2ce9aff684b8a552ee0b8fafe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_4_2.asset using Guid(e3f91f2ce9aff684b8a552ee0b8fafe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e4a952c821ad132d58d001c99f50ad') in 0.018687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_2_0.asset
+  artifactKey: Guid(d1496a34d28f61244bf5400b7595305a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_2_0.asset using Guid(d1496a34d28f61244bf5400b7595305a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ba5293f403cf477150f33dfee19cc07') in 0.018125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_2_4.asset
+  artifactKey: Guid(259a8d0a858c8ca4ea1a5b0d75e31952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_2_4.asset using Guid(259a8d0a858c8ca4ea1a5b0d75e31952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f104a8733f9a026e2e7674bd0d89e5a') in 0.019441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_6_4.asset
+  artifactKey: Guid(7ff6d75573852d94c88cb9adc7c1cebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_6_4.asset using Guid(7ff6d75573852d94c88cb9adc7c1cebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd136291690476de6ccb945afa2b13a49') in 0.017495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_4_0.asset
+  artifactKey: Guid(b9e35c9f07aa13e47923e79f3da39272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_4_0.asset using Guid(b9e35c9f07aa13e47923e79f3da39272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e8bb70cdd11a3fcc12baff84d69505e') in 0.020652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_4_8.asset
+  artifactKey: Guid(8e96d2a10cf373b4bac8cd68a08b9ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_4_8.asset using Guid(8e96d2a10cf373b4bac8cd68a08b9ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dff5deabd7b0fb3c885b95f085a63699') in 0.017888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.530873 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_6_8.asset
+  artifactKey: Guid(7656573486041484e8f7dfba39e11800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_6_8.asset using Guid(7656573486041484e8f7dfba39e11800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '409e4877e3ca34a00c3d35ac9ee7ed57') in 0.018239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_7_1.asset
+  artifactKey: Guid(2f5bb956aeb03a3458901efc17e0ac3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_7_1.asset using Guid(2f5bb956aeb03a3458901efc17e0ac3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6edeb55c5e02028704ed4d3d82656a1f') in 0.019304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_7_3.asset
+  artifactKey: Guid(87d621a32707b624eb6d8fef4abd423b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_7_3.asset using Guid(87d621a32707b624eb6d8fef4abd423b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '097799c45a10cbe9f0112736e3887b1b') in 0.020157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_7_6.asset
+  artifactKey: Guid(334fbd1535a28a14faa4f1b8259d4e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_7_6.asset using Guid(334fbd1535a28a14faa4f1b8259d4e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1329a26ec4a4e1624d15c939ec9d19ad') in 0.020843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/tree_1.asset
+  artifactKey: Guid(f3c589edd837c1b4896eec155c242bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/tree_1.asset using Guid(f3c589edd837c1b4896eec155c242bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c536eac037dd7fd01bf83bfb0b18dd5e') in 0.015098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_7_7.asset
+  artifactKey: Guid(8649e0e88f539d3439eb097e1bcbe96f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_7_7.asset using Guid(8649e0e88f539d3439eb097e1bcbe96f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c35db2007ad5eb0b027a138e412973f') in 0.016504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/tiles_stone_3.asset
+  artifactKey: Guid(4bbc8b4585a80a14b9bd9f9f0173b1de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/tiles_stone_3.asset using Guid(4bbc8b4585a80a14b9bd9f9f0173b1de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8108ad3064cc532ee45a58f1835e0f16') in 0.015151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_7_5.asset
+  artifactKey: Guid(cc3495a4ce4cdb844a5e77486554e008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pinneaple Dev/Assets/Tiles/TileSprites/ground_tiles_7_5.asset using Guid(cc3495a4ce4cdb844a5e77486554e008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0fdc3a2dbcf0c7ad878d2623e752403') in 0.019294 seconds 
