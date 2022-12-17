@@ -41,16 +41,16 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Script\TopDownCharacterController.cs" />
+     <Compile Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Script\PropsAltar.cs" />
+     <Compile Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Script\LayerTrigger.cs" />
+     <Compile Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
+     <Compile Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Asset Store Assets\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
-     <Compile Include="Assets\Asset Store Assets\Cainos\Pixel Art Top Down - Basic\Script\TopDownCharacterController.cs" />
-     <Compile Include="Assets\Asset Store Assets\Cainos\Pixel Art Top Down - Basic\Script\LayerTrigger.cs" />
-     <Compile Include="Assets\Asset Store Assets\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
-     <Compile Include="Assets\Asset Store Assets\Cainos\Pixel Art Top Down - Basic\Script\PropsAltar.cs" />
-     <None Include="Assets\Asset Store Assets\Cainos\Pixel Art Top Down - Basic\Changelog.txt" />
-     <None Include="Assets\Asset Store Assets\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow.shader" />
-     <None Include="Assets\Asset Store Assets\Pinneaple Dev\Documentation\READ ME.txt" />
-     <None Include="Assets\Asset Store Assets\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow Mask.shader" />
+     <None Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Changelog.txt" />
+     <None Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow.shader" />
+     <None Include="Assets\Asset Packs\Pinneaple Dev\Documentation\READ ME.txt" />
+     <None Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow Mask.shader" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
