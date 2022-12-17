@@ -9,8 +9,8 @@ public class DialogueTrigger : MonoBehaviour
    /// <summary>
    /// Called when Player collides into Dialogue Trigger
    /// </summary>
-   public void TriggerDialogue()
+   public void TriggerGreetings()
    {
-      dialogue.Speak();
+      dialogue.Greet();
    }
 }

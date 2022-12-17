@@ -2,27 +2,30 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed;
     /// <summary>
-    /// Stores the X and Y axis values of the Player
+    /// Stores the X and Y axis movement values of the Player
     /// </summary>
     private Vector2 _movement;
     private Rigidbody2D _rigidbody;
     private Animator _animator;
-
+    private Canvas _canvas;
+    private Text _popInteractText;
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        _canvas = GetComponentInChildren<Canvas>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        _popInteractText = _canvas.GetComponentInChildren<Text>();
     }
 
     // Update is called once per frame
@@ -58,15 +61,48 @@ public class PlayerController : MonoBehaviour
         {
             if (col.GetComponent<Trigger>() is Trigger trigger)
             {
-                switch (trigger.triggerType)
+                if (trigger.triggerType == Trigger.TriggerType.ShopEntrance)
                 {
-                    case Trigger.TriggerType.ShopEntrance:
-                        trigger.GetComponent<DialogueTrigger>().TriggerDialogue();
-                        break;
-                    case Trigger.TriggerType.ShopCounter:
-                        break;
+                    trigger.GetComponent<DialogueTrigger>().TriggerGreetings();
                 }
             }
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.CompareTag("Trigger"))
+        {
+            if (col.GetComponent<Trigger>() is Trigger trigger)
+            {
+                if (trigger.triggerType == Trigger.TriggerType.ShopCounter)
+                {
+                    ShowInteractAction("Click E to Talk");
+                }
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.CompareTag("Trigger"))
+        {
+            if (col.GetComponent<Trigger>() is Trigger trigger)
+            {
+                if (trigger.triggerType == Trigger.TriggerType.ShopCounter)
+                {
+                    _canvas.enabled = false;
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Pops up an Interact Action Hover Message telling players to press a button inorder to interact with something.
+    /// </summary>
+    private void ShowInteractAction(string action)
+    {
+        _popInteractText.text = action;
+        _canvas.enabled = true;
     }
 }

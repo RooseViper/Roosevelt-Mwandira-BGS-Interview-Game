@@ -4,6 +4,9 @@ using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+///  Stores the Shop Keepers dialogue. Note: This code is reusable and can be used on any other NPC's
+/// </summary>
 public class Dialogue : MonoBehaviour
 {
     /// <summary>
@@ -21,22 +24,35 @@ public class Dialogue : MonoBehaviour
     }
 
     /// <summary>
-    /// Allows the Merchant to say some random dialogue as the Player walks in
+    /// Greets the Player when they walk in the SHop.
     /// </summary>
-    public void Speak()
+    public void Greet()
     {
         if (!canvas.enabled)
         {
             canvas.enabled = true;
-            _dialogueText.text = greetings[Random.Range(0, greetings.Length)];
             StopAllCoroutines();
+            StartCoroutine(SlowlyTypeSentence(greetings[Random.Range(0, greetings.Length)]));
             StartCoroutine(CloseCanvas());
         }
     }
 
+    /// <summary>
+    /// Types in the greeting slowly in the text area
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator SlowlyTypeSentence(string greeting)
+    {
+        _dialogueText.text = "";
+        foreach (char letter in greeting.ToCharArray())
+        {
+            _dialogueText.text += letter;
+            yield return new WaitForSeconds(0.05f);
+        }
+    }
     private IEnumerator CloseCanvas()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(7.5f);
         canvas.enabled = false;
     }
 }
