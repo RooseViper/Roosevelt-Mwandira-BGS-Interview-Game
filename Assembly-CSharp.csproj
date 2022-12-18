@@ -47,7 +47,9 @@
      <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\TestingUnitTests.cs" />
      <Compile Include="Assets\LeanTween\Framework\LTSeq.cs" />
+     <Compile Include="Assets\Scripts\InventoryManager.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralUISpace.cs" />
+     <Compile Include="Assets\Scripts\OutFitManager.cs" />
      <Compile Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Script\PropsAltar.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />
      <Compile Include="Assets\Scripts\Trigger.cs" />
@@ -59,6 +61,7 @@
      <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacy.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacyExt.cs" />
+     <Compile Include="Assets\Scripts\Outfit.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier2d.cs" />
      <Compile Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Script\LayerTrigger.cs" />
      <Compile Include="Assets\LeanTween\Framework\LTDescrOptional.cs" />
@@ -84,9 +87,10 @@
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasic.cs" />
      <Compile Include="Assets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
-     <Compile Include="Assets\Scripts\InventoryManager.cs" />
-     <Compile Include="Assets\Scripts\OutFitManager.cs" />
-     <Compile Include="Assets\Scripts\Outfit.cs" />
+     <Compile Include="Assets\Scripts\Scriptable Objects\ShopInventory.cs" />
+     <Compile Include="Assets\Scripts\Item.cs" />
+     <Compile Include="Assets\Scripts\ShopItem.cs" />
+     <Compile Include="Assets\Scripts\ShopManager.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Asset Packs\2d characters family\Scenes" />
      <Folder Include="Assets\Asset Packs\Pinneaple Dev\Assets\Tiles\Tilesets" />
@@ -98,6 +102,7 @@
      <None Include="Assets\LeanTween\ReadMe.txt" />
      <Folder Include="Assets\Asset Packs\2d characters family" />
      <None Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Changelog.txt" />
+     <Folder Include="Assets\Homeless\UI Assets" />
      <Folder Include="Assets\Palettes" />
      <Folder Include="Assets\LeanTween\Examples\Prefabs" />
      <Folder Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Material" />
@@ -109,10 +114,13 @@
      <Folder Include="Assets\LeanTween\Framework" />
      <None Include="Assets\LeanTween\License.txt" />
      <Folder Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Prefab" />
+     <Folder Include="Assets\Homeless\UI Assets\Item_Icons" />
      <Folder Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Prefab\Props" />
      <Folder Include="Assets\Scripts" />
+     <Folder Include="Assets\Textures\Sprites\Icons" />
      <Folder Include="Assets\Asset Packs\Pinneaple Dev\Documentation" />
      <Folder Include="Assets\LeanTween\Documentation\classes" />
+     <Folder Include="Assets\Scripts\Scriptable Objects" />
      <Folder Include="Assets\Animations\Player" />
      <Folder Include="Assets\Asset Packs\Pinneaple Dev\Assets\Animations" />
      <None Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow.shader" />
@@ -134,6 +142,7 @@
      <Folder Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Animation" />
      <Folder Include="Assets\Palettes\Tiles\Plant Tiles" />
      <Folder Include="Assets\Palettes\Tiles\Shop Interior Tiles" />
+     <Folder Include="Assets\Animations\Player\Outfits\Blue Gravity" />
      <Folder Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Texture\Materials" />
      <Folder Include="Assets\LeanTween\Examples\Models" />
      <Folder Include="Assets\Asset Packs" />
@@ -152,6 +161,8 @@
      <Folder Include="Assets\LeanTween\Documentation\assets" />
      <Folder Include="Assets\Asset Packs\Fantasy Wooden GUI  Free\normal_ui_set A" />
      <Folder Include="Assets\Asset Packs\Pinneaple Dev\Assets\CharacterSprites\Materials" />
+     <Folder Include="Assets\Homeless\Demo" />
+     <Folder Include="Assets\Homeless" />
      <Folder Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Prefab\Plant" />
      <Folder Include="Assets\Asset Packs\Cainos" />
      <Folder Include="Assets\Asset Packs\Pinneaple Dev\Demo" />
@@ -159,6 +170,7 @@
      <Folder Include="Assets\Animations\Player\Outfits\Default" />
      <Folder Include="Assets\Asset Packs\Pinneaple Dev" />
      <Folder Include="Assets\Asset Packs\Fantasy Wooden GUI  Free\Scene" />
+     <Folder Include="Assets\Animations\Player\Outfits\Galactic" />
      <Folder Include="Assets\LeanTween\Examples\Archived" />
      <Folder Include="Assets\LeanTween\Examples\Scripts" />
      <None Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow Mask.shader" />

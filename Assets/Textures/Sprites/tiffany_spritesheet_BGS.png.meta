@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: e4774a0a953293c4d8b65498c0c4de65
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 2582
+        width: 332
+        height: 464
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534e71eecfae3ae409ad8553e6695283
+      internalID: -1065421621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_1
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 2586
+        width: 332
+        height: 460
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90dc8b1b37891364f8cb9b60a1f81329
+      internalID: 2028955351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_2
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 2586
+        width: 336
+        height: 460
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e139585b1a44ff4b8cb5a3a846d0129
+      internalID: 1729557945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_3
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 2582
+        width: 332
+        height: 464
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfe4d23d7b339e44902b6cda5132068
+      internalID: 285910345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_4
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 2582
+        width: 332
+        height: 464
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc810b8fce11fb409d48be3dfcc69be
+      internalID: -1970406785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_5
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 2582
+        width: 332
+        height: 464
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8480660c538ba549a25310ed4bbfb68
+      internalID: 1627838655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_6
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 2574
+        width: 332
+        height: 464
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d581a8b02b8a8544c90eaa1b0ba099b0
+      internalID: -1747451193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_7
+      rect:
+        serializedVersion: 2
+        x: 2991
+        y: 2574
+        width: 332
+        height: 464
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c4867be13d8da4492ca79fbc978e3c
+      internalID: 657081938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_8
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 2126
+        width: 302
+        height: 430
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc4ad820c23d994fa526bfeeaa239a1
+      internalID: -2135376934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_9
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 2122
+        width: 302
+        height: 419
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d97ca9e88d6834d8ec490bf048feb5
+      internalID: 809012804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_10
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 2118
+        width: 302
+        height: 430
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efefa5e0547653e45ae6badd10b647f3
+      internalID: -1480428805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_11
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 2126
+        width: 302
+        height: 430
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24e67b2c1fccb4439a105fc0a7ee069
+      internalID: -1678358767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_12
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 2122
+        width: 302
+        height: 419
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf42190d7dbca7d4c9b92a20872da74b
+      internalID: 2115777183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_13
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 2115
+        width: 302
+        height: 429
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b55b3388823fa84e8419050fc9ec029
+      internalID: -913720650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1602
+        width: 332
+        height: 464
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749aec11a5336324f9f9c6303e8ff152
+      internalID: 259110601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_15
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1602
+        width: 332
+        height: 464
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684d7bb9a78e09b4f88539a470468d39
+      internalID: 367352616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_16
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 1602
+        width: 332
+        height: 464
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735b18bc950801345a07ffc5f6f061eb
+      internalID: -1432243988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_17
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 1602
+        width: 332
+        height: 464
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b264dea838b3243a07c20390178108
+      internalID: 804502825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_18
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1606
+        width: 336
+        height: 460
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea786c384494fc4dbef7c8490da7682
+      internalID: -20363188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_19
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 1606
+        width: 332
+        height: 460
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3aecbf980999b4888d540e3b2bd51c
+      internalID: 97249678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_20
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 1560
+        width: 11
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddacdd86f53f8d44e9b7012a8a76f9af
+      internalID: 1448293848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_21
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 984
+        width: 15
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad65234c1af85e34cb5c91591f7373a5
+      internalID: 81878110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_22
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 773
+        width: 15
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e989177b39fc14e44a5e1ab40f9c511a
+      internalID: 146900289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_23
+      rect:
+        serializedVersion: 2
+        x: 3553
+        y: 750
+        width: 4
+        height: 4
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94957f8b932b4f843a18b7b1b8133ddd
+      internalID: -1079210696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_24
+      rect:
+        serializedVersion: 2
+        x: 3560
+        y: 750
+        width: 8
+        height: 4
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f994ee608f9b746bd0537836cb09af
+      internalID: 1028099907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_25
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 592
+        width: 8
+        height: 4
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a62261022b638e4fa621a94919507db
+      internalID: 1405725774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_26
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 94
+        width: 302
+        height: 434
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a090851457cccd84293056ad52947d3c
+      internalID: -1653864352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_27
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 102
+        width: 301
+        height: 418
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d15e35ae0313b046953cae07012a989
+      internalID: -853698484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_28
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 102
+        width: 301
+        height: 437
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9282ec8294307f147b6d08e8857fd5fd
+      internalID: -1022102521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_29
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 98
+        width: 302
+        height: 430
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e966b27247fed7a47bea125bb3442c51
+      internalID: 1454292962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_30
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 106
+        width: 302
+        height: 414
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33971d814967f84f9bfa8f1fc3b7f36
+      internalID: 2045815463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_31
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 106
+        width: 302
+        height: 433
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1390f475be6e4fe428d17e2d2a33a121
+      internalID: 1673963854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiffany_spritesheet_BGS_32
+      rect:
+        serializedVersion: 2
+        x: 2497
+        y: 471
+        width: 11
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be69d9dd7c047604899a3765ebd08c1e
+      internalID: 800601710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      tiffany_spritesheet_BGS_9: 809012804
+      tiffany_spritesheet_BGS_0: -1065421621
+      tiffany_spritesheet_BGS_13: -913720650
+      tiffany_spritesheet_BGS_20: 1448293848
+      tiffany_spritesheet_BGS_26: -1653864352
+      tiffany_spritesheet_BGS_1: 2028955351
+      tiffany_spritesheet_BGS_3: 285910345
+      tiffany_spritesheet_BGS_7: 657081938
+      tiffany_spritesheet_BGS_18: -20363188
+      tiffany_spritesheet_BGS_14: 259110601
+      tiffany_spritesheet_BGS_29: 1454292962
+      tiffany_spritesheet_BGS_8: -2135376934
+      tiffany_spritesheet_BGS_11: -1678358767
+      tiffany_spritesheet_BGS_12: 2115777183
+      tiffany_spritesheet_BGS_6: -1747451193
+      tiffany_spritesheet_BGS_10: -1480428805
+      tiffany_spritesheet_BGS_21: 81878110
+      tiffany_spritesheet_BGS_32: 800601710
+      tiffany_spritesheet_BGS_25: 1405725774
+      tiffany_spritesheet_BGS_23: -1079210696
+      tiffany_spritesheet_BGS_30: 2045815463
+      tiffany_spritesheet_BGS_15: 367352616
+      tiffany_spritesheet_BGS_27: -853698484
+      tiffany_spritesheet_BGS_16: -1432243988
+      tiffany_spritesheet_BGS_2: 1729557945
+      tiffany_spritesheet_BGS_22: 146900289
+      tiffany_spritesheet_BGS_24: 1028099907
+      tiffany_spritesheet_BGS_19: 97249678
+      tiffany_spritesheet_BGS_28: -1022102521
+      tiffany_spritesheet_BGS_4: -1970406785
+      tiffany_spritesheet_BGS_17: 804502825
+      tiffany_spritesheet_BGS_31: 1673963854
+      tiffany_spritesheet_BGS_5: 1627838655
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

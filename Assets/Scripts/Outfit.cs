@@ -8,7 +8,9 @@ public class Outfit
 {
     public enum OutfitName{
         Default,
-        Red
+        Red,
+        Galactic,
+        BlueGravityStudios
     }
     public OutfitName outfitName;
     public AnimatorOverrideController overrideController;
