@@ -63,4 +63,4 @@ MonoBehaviour:
     description: These scrolls adds 10 points to the knowledge of the reader.
     price: 100
     quantity: 17
-  balance: 0
+  balance: 289

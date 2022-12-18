@@ -67,5 +67,6 @@ public class GameManager : MonoBehaviour
         _playerIsDormant = false;
         LeanTween.moveLocal(continueButtonRect.gameObject, continueClosePosition.localPosition, 0F);
         LeanTween.moveLocalX(popUpDialogBoxRect.gameObject, -1200F, 0F);
+        ShopManager.Instance.Open();
     }
 }

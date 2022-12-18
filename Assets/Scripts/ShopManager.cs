@@ -12,6 +12,7 @@ public class ShopManager : MonoBehaviour
     /// </summary>
     public ShopInventory shopInventory;
     public GameObject shopItemsParent;
+    public GameObject popUpErrorGameobject;
     public Sprite[] previewOutfitSprites;
     public OutFitManager outfitManager;
     public Canvas canvas;
@@ -23,6 +24,8 @@ public class ShopManager : MonoBehaviour
     public ShopItem selectedShopItem;
     [HideInInspector]
     public List<ShopItem> shopItems;
+
+    private float _balance;
     public static  ShopManager Instance => _instance;
     private static ShopManager _instance;
     private void Awake()
@@ -34,6 +37,7 @@ public class ShopManager : MonoBehaviour
     void Start()
     {
         shopItems = shopItemsParent.GetComponentsInChildren<ShopItem>().ToList();
+        _balance = shopInventory.balance;
         StartCoroutine(LoadShopItems());
     }
 
@@ -77,11 +81,31 @@ public class ShopManager : MonoBehaviour
             selectedShopItemImage.sprite = previewOutfitSprites[2];
         }
     }
-
+    /// <summary>
+    /// Buys and Equips the outfit
+    /// </summary>
     public void BuyAndEquip()
     {
         outfitManager.ChangeOutfit(selectedShopItem.outfit);
         Close();
+    }
+
+    public void Buy()
+    {
+        
+    }
+
+    /// <summary>
+    /// This calculates the balance before making the purhcase
+    /// </summary>
+    private void CalculateBalances()
+    {
+        
+    }
+
+    public void Open()
+    {
+        canvas.enabled = true;
     }
 
     public void Close()

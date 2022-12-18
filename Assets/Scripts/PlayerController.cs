@@ -56,11 +56,11 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("Pressed E");
             if (!_canInteract) return;
             if (_isInShop)
             {
-                   GameManager.Instance.OpenPopUpDialogueBox(); 
+                _animator.SetFloat("Speed", 0F);
+                GameManager.Instance.OpenPopUpDialogueBox(); 
             }
         }
     }
