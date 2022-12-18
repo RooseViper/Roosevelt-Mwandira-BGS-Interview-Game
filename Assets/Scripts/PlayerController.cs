@@ -15,6 +15,20 @@ public class PlayerController : MonoBehaviour
     private Animator _animator;
     private Canvas _canvas;
     private Text _popInteractText;
+    /// <summary>
+    /// Decides whether the Player can interact with something when they click the interact button.
+    /// </summary>
+    private bool _canInteract;
+    /// <summary>
+    /// Checks if the Player is inside the Shop.
+    /// </summary>
+    private bool _isInShop;
+    public Animator Animator
+    {
+        get => _animator;
+        set => _animator = value;
+    }
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -31,7 +45,24 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GameManager.Instance.PlayerIsDormant) return;
         Move();
+        Interact();
+    }
+    /// <summary>
+    /// Allows the Player to interact with objects or characters in the Environment.
+    /// </summary>
+    private void Interact()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.Log("Pressed E");
+            if (!_canInteract) return;
+            if (_isInShop)
+            {
+                   GameManager.Instance.OpenPopUpDialogueBox(); 
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -77,6 +108,8 @@ public class PlayerController : MonoBehaviour
             {
                 if (trigger.triggerType == Trigger.TriggerType.ShopCounter)
                 {
+                    _canInteract = true;
+                    _isInShop = true;
                     ShowInteractAction("Click E to Talk");
                 }
             }
@@ -92,6 +125,8 @@ public class PlayerController : MonoBehaviour
                 if (trigger.triggerType == Trigger.TriggerType.ShopCounter)
                 {
                     _canvas.enabled = false;
+                    _canInteract = false;
+                    _isInShop = false;
                 }
             }
         }
