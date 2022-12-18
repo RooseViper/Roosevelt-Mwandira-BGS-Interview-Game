@@ -4537,7 +4537,7 @@ Animator:
   m_GameObject: {fileID: 427515104}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 19ce24f984c966a4f87fb6750a412cf9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6c9778c5b37bacc4ea5033c193148eea, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4564,6 +4564,10 @@ MonoBehaviour:
     overrideController: {fileID: 22100000, guid: c8ecdb2f911c1ef48b122f4e73fde44c, type: 2}
   - outfitName: 1
     overrideController: {fileID: 22100000, guid: 0c58f0c04ce305d4c8950bf4c8558674, type: 2}
+  - outfitName: 2
+    overrideController: {fileID: 22100000, guid: af84677ccd6157143818d44b77fbb1ac, type: 2}
+  - outfitName: 3
+    overrideController: {fileID: 22100000, guid: 73fdea41952abf840ac1c285b8ea1166, type: 2}
 --- !u!1 &448678173
 GameObject:
   m_ObjectHideFlags: 0
@@ -7649,7 +7653,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 312, y: 0}
+  m_AnchoredPosition: {x: 330, y: 0}
   m_SizeDelta: {x: 725.7012, y: 31.2056}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1008757067
@@ -13518,7 +13522,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1511413252
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13583,7 +13587,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1511413254}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1820242420}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
+        m_MethodName: BuyAndEquip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1511413254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13755,7 +13771,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1535831874}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1820242420}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
+        m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1535831874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36875,6 +36903,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shopInventory: {fileID: 11400000, guid: 05ee229525cfdf84eb3166dbc4d842d8, type: 2}
   shopItemsParent: {fileID: 899617203}
+  previewOutfitSprites:
+  - {fileID: 21300000, guid: 6bbc4d782223d4641a3a48c25bc96050, type: 3}
+  - {fileID: 21300000, guid: b8db0d6f05ed30a409dfda5508ceb6c8, type: 3}
+  - {fileID: 21300000, guid: 2522db7a51cbb9b43b90bbd090fe039f, type: 3}
+  outfitManager: {fileID: 427515111}
+  canvas: {fileID: 1178880215}
+  buyAndEquipButton: {fileID: 1511413251}
+  selectedShopItemName: {fileID: 781486429}
+  selectedShopItemImage: {fileID: 988932510}
+  selectedShopItemDescription: {fileID: 1189309631}
+  selectedShopItemPrice: {fileID: 842022454}
+  selectedShopItem: {fileID: 0}
   shopItems: []
 --- !u!1 &1823979170
 GameObject:

@@ -13,4 +13,5 @@ public class ShopInventory : ScriptableObject
     /// The balance of the Shop keeper.
     /// </summary>
     public float balance;
+  
 }
