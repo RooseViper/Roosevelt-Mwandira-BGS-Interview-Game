@@ -63,6 +63,10 @@ public class PlayerController : MonoBehaviour
                 GameManager.Instance.OpenPopUpDialogueBox(); 
             }
         }
+        else if (Input.GetKeyDown(KeyCode.I))
+        {
+            InventoryManager.Instance.OpenInventory();
+        }
     }
 
     private void FixedUpdate()

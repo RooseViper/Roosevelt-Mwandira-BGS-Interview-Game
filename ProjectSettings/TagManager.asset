@@ -9,6 +9,7 @@ TagManager:
   - CanvasShopBuying
   - CanvasShopSelling
   - CanvasGeneral
+  - CanvasInventory
   layers:
   - Default
   - TransparentFX

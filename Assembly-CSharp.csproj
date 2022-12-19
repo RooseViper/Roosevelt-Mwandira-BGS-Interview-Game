@@ -92,6 +92,7 @@
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasic.cs" />
      <Compile Include="Assets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
+     <Compile Include="Assets\Scripts\InventoryItem.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Asset Packs\2d characters family\Scenes" />
      <Folder Include="Assets\Asset Packs\Pinneaple Dev\Assets\Tiles\Tilesets" />
