@@ -45,8 +45,6 @@ public class ShopManager : MonoBehaviour
     public ShopItem selectedShopItem;
     [HideInInspector]
     public List<ShopItem> shopItems;
-    [HideInInspector]
-    public List<ShopItem> shopItemsPlayer;
     private float _balance;
     private ShopSectionDisplaySelector _shopSectionDisplaySelector;
     public static bool OnBuyingPanel = false;
@@ -62,7 +60,6 @@ public class ShopManager : MonoBehaviour
     void Start()
     {
         shopItems = shopItemsParent.GetComponentsInChildren<ShopItem>().ToList();
-        shopItemsPlayer = shopItemsPlayerParent.GetComponentsInChildren<ShopItem>().ToList();
         _shopSectionDisplaySelector = GetComponent<ShopSectionDisplaySelector>();
         _balance = shopInventory.balance;
         shopBalanceTextBuying.text = "" + _balance;
@@ -83,7 +80,7 @@ public class ShopManager : MonoBehaviour
         // Loads up the Items that can be bought
         LoadShopInventory(shopItems, shopInventory);
         //Loads up the Player Inventory in the Shop so the Items can be sold
-        LoadShopInventory(shopItemsPlayer, playerInventory);
+        LoadShopInventory(shopItemsPlayerParent.GetComponentsInChildren<ShopItem>().ToList(), playerInventory);
     }
 
     /// <summary>
@@ -153,17 +150,18 @@ public class ShopManager : MonoBehaviour
             //The selected item in the Shop Keepers inventory.
             ShopItem shopItem = Array.Find(shopItems.ToArray(), sh => sh.itemName == selectedShopItemName.text);
             //The bought Item in the Players inventory
-            ShopItem shopItemPlayer = Array.Find(shopItemsPlayer.ToArray(), sh => sh.itemName == selectedShopItemName.text);
+            ShopItem shopItemPlayer = Array.Find(shopItemsPlayerParent.GetComponentsInChildren<ShopItem>(), sh => sh.itemName == selectedShopItemName.text);
+
             if (shopItem != null)
             {
                 shopItem.UpdateItem(false);
-            }
-            else if (shopItemPlayer != null)
+            } 
+            if (shopItemPlayer != null)
             {
                 shopItemPlayer.UpdateItem(true);
             }
             UpdateBalances();
-            UpdatePlayerShopInventory();
+            AddBoughtItem();
         }
     }
     public void SellItem()
@@ -174,14 +172,14 @@ public class ShopManager : MonoBehaviour
             _balance -= selectedShopItem.price;
             InventoryManager.Instance.balance += selectedShopItem.price;
             //The selected item being sold.
-            ShopItem shopItem = Array.Find(shopItemsPlayer.ToArray(), sh => sh.itemName == selectedShopItemName.text);
+            ShopItem shopItem = Array.Find(shopItemsPlayerParent.GetComponentsInChildren<ShopItem>(), sh => sh.itemName == selectedShopItemName.text);
             //The sold Item bought by the Shop keeper
             ShopItem shopItemShopKeeper =  Array.Find(shopItems.ToArray(), sh => sh.itemName == selectedShopItemName.text);
             if (shopItem != null)
             {
                 shopItem.UpdateItem(false);
-            }
-            else if (shopItemShopKeeper != null)
+            } 
+            if (shopItemShopKeeper != null)
             {
                 shopItemShopKeeper.UpdateItem(true);
             }
@@ -189,38 +187,34 @@ public class ShopManager : MonoBehaviour
         }
     }
     
-    /// <summary>
-    /// Updates the Inventory of the Player in the Shop if a new Item is bought
-    /// </summary>
-    private void UpdatePlayerShopInventory()
+    private void AddBoughtItem()
     {
-        if (!shopItemsPlayer.Contains(selectedShopItem))
+        List<ShopItem> currentShopItems = shopItemsPlayerParent.GetComponentsInChildren<ShopItem>().ToList();
+        ShopItem newShopItem = Array.Find(currentShopItems.ToArray(), sh => sh.itemName == selectedShopItem.itemName);
+        if (newShopItem == null)
         {
-            List<ShopItem> currentShopItems = shopItemsPlayerParent.GetComponentsInChildren<ShopItem>().ToList();
-            List<ShopItem> newShopItems = new List<ShopItem>();
-            foreach (ShopItem item in currentShopItems)
+            int index = PlayerSlotsFilled(currentShopItems);
+            currentShopItems[index].itemName = selectedShopItem.itemName;
+            currentShopItems[index].outfit = selectedShopItem.outfit;
+            currentShopItems[index].sprite = selectedShopItem.sprite;
+            currentShopItems[index].description = selectedShopItem.description;
+            currentShopItems[index].price = 0;
+            currentShopItems[index].quantity = 1;
+            currentShopItems[index].Initialize();
+        }
+    }
+
+    private int PlayerSlotsFilled(List<ShopItem> _shopItems)
+    {
+        int counter = 0;
+        foreach (ShopItem shopItem in _shopItems)
+        {
+            if (!string.IsNullOrEmpty(shopItem.itemName))
             {
-                if (!string.IsNullOrEmpty(item.itemName))
-                {
-                    newShopItems.Add(item);
-                    Debug.Log(item.itemName);
-                }
-            }
-            for (int i = 0; i < newShopItems.Count; i++)
-            {
-                currentShopItems[i].itemName = newShopItems[i].itemName;
-                currentShopItems[i].outfit = newShopItems[i].outfit;
-                currentShopItems[i].sprite = newShopItems[i].sprite;
-                currentShopItems[i].description = newShopItems[i].description;
-                currentShopItems[i].price = newShopItems[i].price;
-                currentShopItems[i].quantity = newShopItems[i].quantity;
-                currentShopItems[i].Initialize();
-            }
-            foreach (ShopItem currentShopItem in currentShopItems)
-            {
-                currentShopItem.ClearSlot();
+                counter++;
             }
         }
+        return counter;
     }
 
     /// <summary>

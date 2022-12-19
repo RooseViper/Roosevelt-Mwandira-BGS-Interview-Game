@@ -59,6 +59,11 @@ public class ShopItem : MonoBehaviour
             _button.colors = colors;
         }
     }
+    
+    public void ClearName()
+    {
+        itemName = "";
+    }
 
     /// <summary>
     /// Updates information of the Item in the slot
@@ -74,14 +79,7 @@ public class ShopItem : MonoBehaviour
             quantity--;
         }
         quantityText.text = "" + quantity;
-        if (quantity <= 0)
-        {
-            image.color = Color.grey;
-        }
-        else
-        {
-            image.color = Color.white;
-        }
+        image.color = quantity <= 0 ? Color.grey : Color.white;
     }
 
     /// <summary>
