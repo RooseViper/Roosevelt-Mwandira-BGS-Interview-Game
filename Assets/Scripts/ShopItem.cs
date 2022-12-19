@@ -47,10 +47,11 @@ public class ShopItem : MonoBehaviour
         if (string.IsNullOrEmpty(itemName))
         {
             image.enabled = false;
+            itemName = "";
             quantityText.text = "";
             priceText.text = "";
             coinsImage.enabled = false;
-        
+            
             //Removes the buttons transition effects
             var colors = _button.colors;
             colors.highlightedColor = Color.white;

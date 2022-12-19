@@ -11,8 +11,28 @@ public class ShopManager : MonoBehaviour
     /// Scriptable object storing all the Items in the shop
     /// </summary>
     public ShopInventory shopInventory;
+    /// <summary>
+    /// Scriptable object storing all the default Items in the players inventory 
+    /// </summary>
+    public ShopInventory playerInventory;
     public GameObject shopItemsParent;
-    public GameObject popUpErrorGameobject;
+    public GameObject shopItemsPlayerParent;
+    /// <summary>
+    /// Displays the balance of the Shop keeper when buying
+    /// </summary>
+    public Text shopBalanceTextBuying;
+    /// <summary>
+    /// Displays the balance of the Player when buying
+    /// </summary>
+    public Text playerBalanceTextBuying;
+    /// <summary>
+    /// Displays the balance of the Shop keeper when selling
+    /// </summary>
+    public Text shopBalanceTextSelling;
+    /// <summary>
+    /// Displays the balance of the Player when selling
+    /// </summary>
+    public Text playerBalanceTextSelling; 
     public Sprite[] previewOutfitSprites;
     public OutFitManager outfitManager;
     public Canvas canvas;
@@ -24,7 +44,8 @@ public class ShopManager : MonoBehaviour
     public ShopItem selectedShopItem;
     [HideInInspector]
     public List<ShopItem> shopItems;
-
+    [HideInInspector]
+    public List<ShopItem> shopItemsPlayer;
     private float _balance;
     public static  ShopManager Instance => _instance;
     private static ShopManager _instance;
@@ -37,7 +58,11 @@ public class ShopManager : MonoBehaviour
     void Start()
     {
         shopItems = shopItemsParent.GetComponentsInChildren<ShopItem>().ToList();
+        shopItemsPlayer = shopItemsPlayerParent.GetComponentsInChildren<ShopItem>().ToList();
         _balance = shopInventory.balance;
+        shopBalanceTextBuying.text = "" + _balance;
+        shopBalanceTextSelling.text = "" + _balance;
+        
         StartCoroutine(LoadShopItems());
     }
 
@@ -48,19 +73,32 @@ public class ShopManager : MonoBehaviour
     IEnumerator LoadShopItems()
     {
         yield return new WaitForEndOfFrame();
+        playerBalanceTextBuying.text = "" + InventoryManager.Instance.balance;
+        playerBalanceTextSelling.text = "" + InventoryManager.Instance.balance;
+        // Loads up the Items that can be bought
+        LoadShopInventory(shopItems, shopInventory);
+        //Loads up the Player Inventory in the Shop so the Items can be sold
+        LoadShopInventory(shopItemsPlayer, playerInventory);
+    }
+
+    /// <summary>
+    /// Sets up the Items that can be sold
+    /// </summary>
+    private void LoadShopInventory(List<ShopItem> currentShopItems, ShopInventory shopInventory)
+    {
         for (int i = 0; i < shopInventory.items.Length; i++)
         {
-            shopItems[i].itemName = shopInventory.items[i].itemName;
-            shopItems[i].outfit = shopInventory.items[i].outfit;
-            shopItems[i].sprite = shopInventory.items[i].sprite;
-            shopItems[i].description = shopInventory.items[i].description;
-            shopItems[i].price = shopInventory.items[i].price;
-            shopItems[i].quantity = shopInventory.items[i].quantity;
-            shopItems[i].Initialize();
+            currentShopItems[i].itemName = shopInventory.items[i].itemName;
+            currentShopItems[i].outfit = shopInventory.items[i].outfit;
+            currentShopItems[i].sprite = shopInventory.items[i].sprite;
+            currentShopItems[i].description = shopInventory.items[i].description;
+            currentShopItems[i].price = shopInventory.items[i].price;
+            currentShopItems[i].quantity = shopInventory.items[i].quantity;
+            currentShopItems[i].Initialize();
         }
-        foreach (ShopItem shopItem in shopItems)
+        foreach (ShopItem currentShopItem in currentShopItems)
         {
-            shopItem.ClearSlot();
+            currentShopItem.ClearSlot();
         }
     }
 
@@ -87,20 +125,33 @@ public class ShopManager : MonoBehaviour
     public void BuyAndEquip()
     {
         outfitManager.ChangeOutfit(selectedShopItem.outfit);
+        Buy();
         Close();
     }
 
     public void Buy()
     {
+        AddBalance();
+    }
+
+    public void Sell()
+    {
         
     }
 
     /// <summary>
-    /// This calculates the balance before making the purhcase
+    /// This adds a new balance for the ShopKeeper and subtracts the bought item price from the Player balance 
     /// </summary>
-    private void CalculateBalances()
+    private void AddBalance()
     {
-        
+        if (InventoryManager.Instance.balance > selectedShopItem.price)
+        {
+            _balance += selectedShopItem.price;
+            InventoryManager.Instance.balance -= selectedShopItem.price;
+        }
+        shopBalanceTextBuying.text = "" + _balance;
+        playerBalanceTextBuying.text = "" + InventoryManager.Instance.balance;
+        InventoryManager.Instance.generalDisplayBalanceText.text = "" + InventoryManager.Instance.balance;
     }
 
     public void Open()
