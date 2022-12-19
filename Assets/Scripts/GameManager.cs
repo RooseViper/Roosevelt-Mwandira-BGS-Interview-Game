@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     /// If true it means player cannot move or interact with objects
     /// </summary>
     private bool _playerIsDormant = false;
+    public Canvas[] canvases;
     public bool PlayerIsDormant { get => _playerIsDormant; set => _playerIsDormant = value; }
     private void Awake()
     {
@@ -60,13 +61,25 @@ public class GameManager : MonoBehaviour
         npcDialogue.Speak(popUpDialogueText);
     }
 
-    public void ClosePopUpDialogue()
+    public void OpenShop(bool isBuying)
     {
         popUpDialogueText.text = "";
         _popUpDialogueCanvas.enabled = false;
         _playerIsDormant = false;
         LeanTween.moveLocal(continueButtonRect.gameObject, continueClosePosition.localPosition, 0F);
         LeanTween.moveLocalX(popUpDialogBoxRect.gameObject, -1200F, 0F);
-        ShopManager.Instance.Open();
+        ShopManager.OnBuyingPanel = isBuying;
+        OpenCloseCanvas("CanvasGeneral", false);
+        OpenCloseCanvas(isBuying ? "CanvasShopBuying" : "CanvasShopSelling", true);
+        ShopManager.Instance.ShopSectionDisplaySelector.SwitchPreviewInformation(isBuying);
+    }
+    
+    /// <summary>
+    /// Opens ont the main Canvases
+    /// </summary>
+    public void OpenCloseCanvas(string tagName, bool open)
+    {
+        Canvas canvas = Array.Find(canvases, c => c.CompareTag(tagName));
+        canvas.enabled = open;
     }
 }

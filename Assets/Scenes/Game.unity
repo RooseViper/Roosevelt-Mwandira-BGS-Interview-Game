@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 24133369}
   m_Layer: 5
   m_Name: Canvas_Merchant
-  m_TagString: Untagged
+  m_TagString: CanvasMerchant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -314,15 +314,15 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1532259004}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ClosePopUpDialogue
-        m_Mode: 1
+        m_MethodName: OpenShop
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &40361537
 MonoBehaviour:
@@ -5228,7 +5228,7 @@ GameObject:
   - component: {fileID: 374218963}
   m_Layer: 5
   m_Name: Canvas_Selling_Shop
-  m_TagString: Untagged
+  m_TagString: CanvasShopSelling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5280,7 +5280,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374218962}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -8229,7 +8229,7 @@ GameObject:
   - component: {fileID: 697841688}
   - component: {fileID: 697841687}
   m_Layer: 5
-  m_Name: Buy
+  m_Name: Sell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8302,7 +8302,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1820242420}
         m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
-        m_MethodName: Buy
+        m_MethodName: SellItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12095,7 +12095,7 @@ GameObject:
   - component: {fileID: 1178880213}
   m_Layer: 5
   m_Name: Canvas_Buying_Shop
-  m_TagString: Untagged
+  m_TagString: CanvasShopBuying
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13133,7 +13133,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1820242420}
         m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
         m_MethodName: Close
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16904,8 +16904,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1532259004}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ClosePopUpDialogue
-        m_Mode: 1
+        m_MethodName: OpenShop
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18048,6 +18048,11 @@ MonoBehaviour:
   popUpDialogBoxRect: {fileID: 1796508713}
   npcDialogue: {fileID: 1425077350}
   popUpDialogueText: {fileID: 2113710030}
+  canvases:
+  - {fileID: 24133371}
+  - {fileID: 1178880215}
+  - {fileID: 374218965}
+  - {fileID: 2127199312}
 --- !u!4 &1532259005
 Transform:
   m_ObjectHideFlags: 0
@@ -18149,14 +18154,14 @@ MonoBehaviour:
       - m_Target: {fileID: 1820242420}
         m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
         m_MethodName: Close
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1535831874
 MonoBehaviour:
@@ -41614,6 +41619,7 @@ GameObject:
   - component: {fileID: 1820242419}
   - component: {fileID: 1820242418}
   - component: {fileID: 1820242420}
+  - component: {fileID: 1820242421}
   m_Layer: 0
   m_Name: Inventory Manager
   m_TagString: Untagged
@@ -41675,8 +41681,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6bbc4d782223d4641a3a48c25bc96050, type: 3}
   - {fileID: 21300000, guid: b8db0d6f05ed30a409dfda5508ceb6c8, type: 3}
   - {fileID: 21300000, guid: 2522db7a51cbb9b43b90bbd090fe039f, type: 3}
+  - {fileID: 21300000, guid: 7e0d379ab9dbef24385a33158f3d397c, type: 3}
   outfitManager: {fileID: 427515111}
   canvas: {fileID: 1178880215}
+  sellButton: {fileID: 697841685}
   buyAndEquipButton: {fileID: 1511413251}
   selectedShopItemName: {fileID: 781486429}
   selectedShopItemImage: {fileID: 988932510}
@@ -41685,6 +41693,26 @@ MonoBehaviour:
   selectedShopItem: {fileID: 0}
   shopItems: []
   shopItemsPlayer: []
+--- !u!114 &1820242421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820242417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa61a044ff4a574cb864e380a6d29a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedShopItemNameBuying: {fileID: 781486429}
+  selectedShopItemImageBuying: {fileID: 988932510}
+  selectedShopItemDescriptionBuying: {fileID: 1189309631}
+  selectedShopItemPriceBuying: {fileID: 842022454}
+  selectedShopItemNameSelling: {fileID: 751533916}
+  selectedShopItemImageSelling: {fileID: 257117384}
+  selectedShopItemDescriptionSelling: {fileID: 1148960594}
+  selectedShopItemPriceSelling: {fileID: 1037294874}
 --- !u!1 &1823979170
 GameObject:
   m_ObjectHideFlags: 0
@@ -42471,7 +42499,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1820242420}
         m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
-        m_MethodName: Buy
+        m_MethodName: BuyItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -43520,7 +43548,7 @@ GameObject:
   - component: {fileID: 2127199310}
   m_Layer: 5
   m_Name: Canvas_General
-  m_TagString: Untagged
+  m_TagString: CanvasGeneral
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

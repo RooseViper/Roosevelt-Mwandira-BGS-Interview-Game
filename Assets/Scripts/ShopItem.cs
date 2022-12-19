@@ -59,7 +59,31 @@ public class ShopItem : MonoBehaviour
             _button.colors = colors;
         }
     }
-    
+
+    /// <summary>
+    /// Updates information of the Item in the slot
+    /// </summary>
+    public void UpdateItem(bool isIncrementing)
+    {
+        if (isIncrementing)
+        {
+            quantity++;
+        }
+        else
+        {
+            quantity--;
+        }
+        quantityText.text = "" + quantity;
+        if (quantity <= 0)
+        {
+            image.color = Color.grey;
+        }
+        else
+        {
+            image.color = Color.white;
+        }
+    }
+
     /// <summary>
     /// Allows a Player to select a Shop Item in the Shop
     /// </summary>
@@ -69,14 +93,25 @@ public class ShopItem : MonoBehaviour
         {
             ShopManager.Instance.selectedShopItemName.text = itemName;
             ShopManager.Instance.selectedShopItemImage.sprite = sprite;
-            if (outfit != Outfit.OutfitName.Default)
+            if (ShopManager.OnBuyingPanel)
             {
-                ShopManager.Instance.buyAndEquipButton.SetActive(true);
-                ShopManager.Instance.DisplayPreviewOutfit(outfit);
+                if (outfit != Outfit.OutfitName.Default)
+                {
+                    ShopManager.Instance.buyAndEquipButton.SetActive(true);
+                    ShopManager.Instance.DisplayPreviewOutfit(outfit);
+                }
+                else
+                {
+                    ShopManager.Instance.buyAndEquipButton.SetActive(false);
+                } 
             }
             else
             {
-                ShopManager.Instance.buyAndEquipButton.SetActive(false);
+                if (price <= 0)
+                {
+                    ShopManager.Instance.DisplayPreviewOutfit(outfit);
+                }
+                ShopManager.Instance.sellButton.SetActive(!(price <= 0));
             }
             ShopManager.Instance.selectedShopItemImage.color = Color.white;
             ShopManager.Instance.selectedShopItemDescription.text = description;
