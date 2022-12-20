@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// Switches the preview information of an Item from both the Buying and Selling section of the Shop.
+/// Switches the preview information between the Buying and Selling section of the Shop.
 /// </summary>
 public class ShopSectionDisplaySelector : MonoBehaviour
 {

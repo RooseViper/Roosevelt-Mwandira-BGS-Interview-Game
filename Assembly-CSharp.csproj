@@ -56,6 +56,8 @@
      <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplineEndless.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier.cs" />
      <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
+     <Compile Include="Assets\Scripts\PickableItem.cs" />
+     <Compile Include="Assets\Scripts\ItemDetector.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplines.cs" />
      <Compile Include="Assets\Scripts\ShopInventory.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEventsListeners.cs" />
@@ -81,6 +83,7 @@
      <Compile Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralAdvancedTechniques.cs" />
+     <Compile Include="Assets\Scripts\InventoryItem.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanSmooth.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasics2d.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplineTrack.cs" />
@@ -92,9 +95,6 @@
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasic.cs" />
      <Compile Include="Assets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
-     <Compile Include="Assets\Scripts\InventoryItem.cs" />
-     <Compile Include="Assets\Scripts\PickableItem.cs" />
-     <Compile Include="Assets\Scripts\ItemDetector.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Asset Packs\2d characters family\Scenes" />
      <Folder Include="Assets\Asset Packs\Pinneaple Dev\Assets\Tiles\Tilesets" />

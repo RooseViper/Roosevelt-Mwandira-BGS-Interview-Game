@@ -11,6 +11,7 @@ TagManager:
   - CanvasGeneral
   - CanvasInventory
   - PickableItem
+  - CanvasMainMenu
   layers:
   - Default
   - TransparentFX

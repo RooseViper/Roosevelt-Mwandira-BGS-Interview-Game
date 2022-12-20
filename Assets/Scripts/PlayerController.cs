@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameManager.Instance.PlayerIsDormant) return;
+        if(GameManager.Instance.IsPaused || GameManager.Instance.PlayerIsDormant) return;
         Move();
         Interact();
     }
@@ -79,6 +79,10 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.I))
         {
             InventoryManager.Instance.OpenInventory();
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            GameManager.Instance.PauseResumeGame();
         }
     }
 

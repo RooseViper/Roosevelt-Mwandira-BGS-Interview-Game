@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public Dialogue npcDialogue;    
     public Text popUpDialogueText;
+    public Text instructionsText;
     /// <summary>
     /// A small canvas that pops up whenever the Player is close to a pickable Item
     /// </summary>
@@ -32,8 +34,13 @@ public class GameManager : MonoBehaviour
     /// If true it means player cannot move or interact with objects
     /// </summary>
     private bool _playerIsDormant = false;
+    /// <summary>
+    /// Checks if the game state is Paused
+    /// </summary>
+    private bool isPaused = false;
     public Canvas[] canvases;
     public bool PlayerIsDormant { get => _playerIsDormant; set => _playerIsDormant = value; }
+    public bool IsPaused { get => isPaused; set => isPaused = value; }
     private void Awake()
     {
         _instance = this;
@@ -49,7 +56,7 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Opens and shows the Pop up Dialogue box when Players interact with the NPC
+    /// Opens and shows the Pop up Dialogue box for the Shop Keeper/NPC when talking to the Player when they are interacted with.
     /// </summary>
     public void OpenPopUpDialogueBox()
     {
@@ -78,7 +85,47 @@ public class GameManager : MonoBehaviour
         OpenCloseCanvas(isBuying ? "CanvasShopBuying" : "CanvasShopSelling", true);
         ShopManager.Instance.ShopSectionDisplaySelector.SwitchPreviewInformation(isBuying);
     }
-    
+
+    public void PauseResumeGame()
+    { 
+        isPaused = !isPaused;
+        if (FindObjectsOfType<AudioSource>() is { } audioSources)
+        {
+            foreach (AudioSource audioSource in audioSources)
+            {
+                if (isPaused)
+                {
+                    audioSource.Pause();
+                }
+                else
+                {
+                    audioSource.UnPause();
+                }       
+            }
+        }
+        OpenCloseCanvas("CanvasMainMenu", isPaused);
+    }
+
+    public void CloseMainMenu()
+    {
+        OpenCloseCanvas("CanvasMainMenu", false);
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void ToggleInstructions(Toggle toggle)
+    {
+        instructionsText.enabled = toggle.isOn;
+    }
+
     /// <summary>
     /// Opens ont the main Canvases
     /// </summary>
