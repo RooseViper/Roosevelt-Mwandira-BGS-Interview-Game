@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
     /// If true it means player cannot move or interact with objects
     /// </summary>
     private bool _playerIsDormant = false;
+
+    private AudioListener _audioListener;
     /// <summary>
     /// Checks if the game state is Paused
     /// </summary>
@@ -43,12 +45,14 @@ public class GameManager : MonoBehaviour
     public bool IsPaused { get => isPaused; set => isPaused = value; }
     private void Awake()
     {
+        _playerIsDormant = true;
         _instance = this;
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        _audioListener = Camera.main.GetComponent<AudioListener>();
         _popUpDialogueCanvas = continueButtonRect.GetComponentInParent<Canvas>();
         _popupDialogBoxPosition = popUpDialogBoxRect.localPosition;
         LeanTween.moveLocal(continueButtonRect.gameObject, continueClosePosition.localPosition, 0F);
@@ -89,20 +93,7 @@ public class GameManager : MonoBehaviour
     public void PauseResumeGame()
     { 
         isPaused = !isPaused;
-        if (FindObjectsOfType<AudioSource>() is { } audioSources)
-        {
-            foreach (AudioSource audioSource in audioSources)
-            {
-                if (isPaused)
-                {
-                    audioSource.Pause();
-                }
-                else
-                {
-                    audioSource.UnPause();
-                }       
-            }
-        }
+        _audioListener.enabled = !isPaused;
         OpenCloseCanvas("CanvasMainMenu", isPaused);
     }
 
@@ -142,5 +133,10 @@ public class GameManager : MonoBehaviour
     {
         interactText.text = action;
         interactCanvas.enabled = true;
+    }
+
+    public void ActivatePlayer()
+    {
+        _playerIsDormant = false;
     }
 }

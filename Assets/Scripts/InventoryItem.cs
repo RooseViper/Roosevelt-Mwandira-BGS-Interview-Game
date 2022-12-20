@@ -28,7 +28,9 @@ public class InventoryItem : MonoBehaviour
         if (isOutfit)
         {
             InventoryManager.Instance.outFitManager.ChangeOutfit(outfit);
+            
         }
+        AudioController.Instance.Play("Click");
     }
 
     public void Clear()

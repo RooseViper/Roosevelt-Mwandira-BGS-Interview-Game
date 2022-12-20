@@ -115,6 +115,7 @@ public class ShopItem : MonoBehaviour
             ShopManager.Instance.selectedShopItemDescription.text = description;
             ShopManager.Instance.selectedShopItemPrice.text = "" + price;
             ShopManager.Instance.selectedShopItem = this;
+            AudioController.Instance.Play("Click");
         }
     }
 }

@@ -5,7 +5,9 @@ using UnityEngine;
 public class AudioController : MonoBehaviour
 {
     public Sound[] sounds;
+    public float riseSpeed;
     private static AudioController _instance;
+    private AudioSource mainSource;
     public static AudioController Instance
     {
         get
@@ -16,6 +18,8 @@ public class AudioController : MonoBehaviour
     private void Awake()
     {
         _instance = this;
+        mainSource = GetComponent<AudioSource>();
+        mainSource.volume = 0f;
         foreach (Sound sound in sounds)
         {
             sound.audioSource = gameObject.AddComponent<AudioSource>();
@@ -25,14 +29,13 @@ public class AudioController : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        Play("Ambience");
-    }
 
     private void Update()
     {
-       
+        if (mainSource.volume <= 0.4f)
+        {
+            mainSource.volume += riseSpeed * Time.deltaTime;
+        }
     }
 
 
@@ -45,7 +48,6 @@ public class AudioController : MonoBehaviour
         Sound sound = System.Array.Find(sounds, sObj => sObj.soundName == name);
         if (sound == null) 
             Debug.LogWarning("Sound " + name + "not found");
-        return;
         sound.audioSource.UnPause();
         sound.audioSource.volume = sound.volume;
         if (sound.audioSource.isPlaying)

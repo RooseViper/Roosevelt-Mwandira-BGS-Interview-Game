@@ -97,6 +97,8 @@
      <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
      <Compile Include="Assets\Scripts\AudioController.cs" />
      <Compile Include="Assets\Scripts\Sound.cs" />
+     <Compile Include="Assets\Scripts\FootSteps.cs" />
+     <Compile Include="Assets\Scripts\Blink.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Asset Packs\2d characters family\Scenes" />
      <Folder Include="Assets\Asset Packs\Pinneaple Dev\Assets\Tiles\Tilesets" />
@@ -173,6 +175,7 @@
      <Folder Include="Assets\Asset Packs\Cainos\Pixel Art Top Down - Basic\Prefab\Plant" />
      <Folder Include="Assets\Asset Packs\Cainos" />
      <Folder Include="Assets\Asset Packs\Pinneaple Dev\Demo" />
+     <Folder Include="Assets\Sounds" />
      <Folder Include="Assets\Animations" />
      <Folder Include="Assets\Animations\Player\Outfits\Default" />
      <Folder Include="Assets\Asset Packs\Pinneaple Dev" />

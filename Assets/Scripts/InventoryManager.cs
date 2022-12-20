@@ -61,6 +61,7 @@ public class InventoryManager : MonoBehaviour
             }
         }
         GameManager.Instance.OpenCloseCanvas("CanvasInventory", true);
+        AudioController.Instance.Play("Inventory Open");
     }
 
 
@@ -72,6 +73,7 @@ public class InventoryManager : MonoBehaviour
             inventoryItem.Clear();
         }
         GameManager.Instance.OpenCloseCanvas("CanvasInventory", false);
+        AudioController.Instance.Play("Inventory Close");
     }
     
     /// <summary>
@@ -87,5 +89,6 @@ public class InventoryManager : MonoBehaviour
             shopItem.quantity++;
             shopItem.Initialize();
         }
+        AudioController.Instance.Play("Pickup");
     }
 }

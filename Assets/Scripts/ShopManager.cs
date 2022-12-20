@@ -126,22 +126,12 @@ public class ShopManager : MonoBehaviour
             selectedShopItemImage.sprite = previewOutfitSprites[3];
         }
     }
-    
-    /// <summary>
-    /// Buys and Equips the outfit
-    /// </summary>
-    public void BuyAndEquip()
-    {
-        outfitManager.ChangeOutfit(selectedShopItem.outfit);
-        BuyItem();
-        Close(true);
-    }
-
+ 
     /// <summary>
     /// If the SHop Keeper has This adds a new balance for the ShopKeeper and subtracts the bought item price from the Player balance.
     /// It also adds the bought Item to the Players Inventory
     /// </summary>
-    public void BuyItem()
+    public void BuyItem(bool isChangeOutfit)
     {
         //Checks if the Player has enough money
         if (InventoryManager.Instance.balance > selectedShopItem.price  && selectedShopItem.quantity > 0)
@@ -163,6 +153,16 @@ public class ShopManager : MonoBehaviour
             }
             UpdateBalances();
             AddBoughtItem();
+            if (isChangeOutfit)
+            {
+                outfitManager.ChangeOutfit(selectedShopItem.outfit);
+                Close(true);
+            }
+            AudioController.Instance.Play("Pickup");
+        }
+        else
+        {
+            AudioController.Instance.Play("Error");
         }
     }
     public void SellItem()
@@ -185,6 +185,11 @@ public class ShopManager : MonoBehaviour
                 shopItemShopKeeper.UpdateItem(true);
             }
             UpdateBalances();
+            AudioController.Instance.Play("Pickup");
+        }
+        else
+        {
+            AudioController.Instance.Play("Error");
         }
     }
     
