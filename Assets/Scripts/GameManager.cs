@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private bool _playerIsDormant = false;
 
-    private AudioListener _audioListener;
+    private AudioSource _audioSource;
     /// <summary>
     /// Checks if the game state is Paused
     /// </summary>
@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _audioListener = Camera.main.GetComponent<AudioListener>();
+        _audioSource = Camera.main.GetComponent<AudioSource>();
         _popUpDialogueCanvas = continueButtonRect.GetComponentInParent<Canvas>();
         _popupDialogBoxPosition = popUpDialogBoxRect.localPosition;
         LeanTween.moveLocal(continueButtonRect.gameObject, continueClosePosition.localPosition, 0F);
@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
     public void PauseResumeGame()
     { 
         isPaused = !isPaused;
-        _audioListener.enabled = !isPaused;
+        _audioSource.enabled = !isPaused;
         OpenCloseCanvas("CanvasMainMenu", isPaused);
     }
 

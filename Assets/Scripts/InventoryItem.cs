@@ -22,7 +22,9 @@ public class InventoryItem : MonoBehaviour
         _button = GetComponent<Button>();
         _button.onClick.AddListener(SelectIInventoryItem);
     }
-
+    /// <summary>
+    /// Selects Item in the Inventory
+    /// </summary>
     private void SelectIInventoryItem()
     {
         if (isOutfit)
