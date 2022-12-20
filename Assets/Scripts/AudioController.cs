@@ -32,7 +32,7 @@ public class AudioController : MonoBehaviour
 
     private void Update()
     {
-        if (mainSource.volume <= 0.4f)
+        if (mainSource.volume <= 0.3f)
         {
             mainSource.volume += riseSpeed * Time.deltaTime;
         }
