@@ -10,6 +10,7 @@ TagManager:
   - CanvasShopSelling
   - CanvasGeneral
   - CanvasInventory
+  - PickableItem
   layers:
   - Default
   - TransparentFX
@@ -21,8 +22,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - PickableItems
+  - Trigger
   - 
   - 
   - 

@@ -9,7 +9,6 @@ using UnityEngine.UI;
 /// </summary>
 public class GameManager : MonoBehaviour
 {
-    public PlayerController playerController;
     public RectTransform continueButtonRect;
     public RectTransform continueClosePosition;
     public RectTransform continueOpenPosition;
@@ -19,6 +18,12 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public Dialogue npcDialogue;    
     public Text popUpDialogueText;
+    /// <summary>
+    /// A small canvas that pops up whenever the Player is close to a pickable Item
+    /// </summary>
+    public Canvas interactCanvas;
+
+    public Text interactText;
     private Canvas _popUpDialogueCanvas;
     private Vector3 _popupDialogBoxPosition;
     public static GameManager Instance => _instance;
@@ -81,5 +86,14 @@ public class GameManager : MonoBehaviour
     {
         Canvas canvas = Array.Find(canvases, c => c.CompareTag(tagName));
         canvas.enabled = open;
+    }
+    
+    /// <summary>
+    /// Pops up an Interact Action Hover Message telling players to press a button inorder to interact with something.
+    /// </summary>
+    public void ShowInteractAction(string action)
+    {
+        interactText.text = action;
+        interactCanvas.enabled = true;
     }
 }

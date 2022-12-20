@@ -63,6 +63,8 @@ public class InventoryManager : MonoBehaviour
         GameManager.Instance.OpenCloseCanvas("CanvasInventory", true);
     }
 
+
+
     public void CloseInventory()
     {
         foreach (InventoryItem inventoryItem in inventoryItems)
@@ -70,5 +72,20 @@ public class InventoryManager : MonoBehaviour
             inventoryItem.Clear();
         }
         GameManager.Instance.OpenCloseCanvas("CanvasInventory", false);
+    }
+    
+    /// <summary>
+    /// Picks up an Item from the ground
+    /// </summary>
+    public void PickupItem(string itemName)
+    {
+        ShopItem[] shop_Items = ShopManager.Instance.shopItemsPlayerParent.GetComponentsInChildren<ShopItem>();
+        Item item = Array.Find(ShopManager.Instance.shopInventory.items, i => i.itemName == itemName);
+        ShopItem shopItem = Array.Find(shop_Items, s => s.itemName == itemName);
+        if (item != null && shopItem != null)
+        {
+            shopItem.quantity++;
+            shopItem.Initialize();
+        }
     }
 }

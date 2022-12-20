@@ -13,8 +13,6 @@ public class PlayerController : MonoBehaviour
     private Vector2 _movement;
     private Rigidbody2D _rigidbody;
     private Animator _animator;
-    private Canvas _canvas;
-    private Text _popInteractText;
     /// <summary>
     /// Decides whether the Player can interact with something when they click the interact button.
     /// </summary>
@@ -23,6 +21,8 @@ public class PlayerController : MonoBehaviour
     /// Checks if the Player is inside the Shop.
     /// </summary>
     private bool _isInShop;
+
+    private ItemDetector _itemDetector;
     public Animator Animator
     {
         get => _animator;
@@ -33,13 +33,19 @@ public class PlayerController : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-        _canvas = GetComponentInChildren<Canvas>();
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        _popInteractText = _canvas.GetComponentInChildren<Text>();
+        _itemDetector = GetComponentInChildren<ItemDetector>();
+    }
+
+    private void DestroyPickedUpItem()
+    {
+        if (_itemDetector.pickableItem != null)
+        {
+            Destroy(_itemDetector.pickableItem.gameObject);
+        }
     }
 
     // Update is called once per frame
@@ -56,11 +62,18 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (!_canInteract) return;
-            if (_isInShop)
+            if (_canInteract)
             {
-                _animator.SetFloat("Speed", 0F);
-                GameManager.Instance.OpenPopUpDialogueBox(); 
+                if (_isInShop)
+                {
+                    _animator.SetFloat("Speed", 0F);
+                    GameManager.Instance.OpenPopUpDialogueBox(); 
+                }
+            }
+            if (_itemDetector.isInRange)
+            {
+                InventoryManager.Instance.PickupItem(_itemDetector.itemInRange);
+                DestroyPickedUpItem();
             }
         }
         else if (Input.GetKeyDown(KeyCode.I))
@@ -114,7 +127,7 @@ public class PlayerController : MonoBehaviour
                 {
                     _canInteract = true;
                     _isInShop = true;
-                    ShowInteractAction("Click E to Talk");
+                    GameManager.Instance.ShowInteractAction("Click E to Talk");
                 }
             }
         }
@@ -128,7 +141,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (trigger.triggerType == Trigger.TriggerType.ShopCounter)
                 {
-                    _canvas.enabled = false;
+                     GameManager.Instance.interactCanvas.enabled = false;
                     _canInteract = false;
                     _isInShop = false;
                 }
@@ -136,12 +149,5 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Pops up an Interact Action Hover Message telling players to press a button inorder to interact with something.
-    /// </summary>
-    private void ShowInteractAction(string action)
-    {
-        _popInteractText.text = action;
-        _canvas.enabled = true;
-    }
+
 }

@@ -103,6 +103,7 @@ public class ShopManager : MonoBehaviour
             currentShopItem.ClearSlot();
         }
     }
+ 
 
     /// <summary>
     /// Previews the appropriate selected outfit.
